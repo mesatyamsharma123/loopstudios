@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from '../../../public/logo.svg'
 
 function Header() {
   const [open,setOpen]=useState(false)
@@ -15,7 +16,7 @@ function Header() {
     >
       <nav className="flex items-center justify-between font-bold text-white px-6">
         {/* log */}
-        <img src="/logo.svg"></img>
+        <img src={logo}></img>
 
         {/* menu */}
         <div className="hidden h-10 md:flex md:space-x-8">
@@ -64,7 +65,7 @@ function Header() {
 
 
       <div className="max-w-lg mt-32 mb-32 p-4 text-2xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl ">
-        Impressive Experiences That Daliver
+        Impressive Experiences That Deliver
       </div>
     </header>
   );
